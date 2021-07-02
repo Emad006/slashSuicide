@@ -4,3 +4,9 @@ main: me.xyrophyte.slashsuicide.SlashSuicide
 api-version: 1.17
 authors: [ XyroPhyte ]
 description: A simple /kill and /suicide Spigot Plugin.
+commands:
+  suicide:
+    description: Commit Suicide.
+    usage: /suicide or /kill
+    aliases:
+      - kill
