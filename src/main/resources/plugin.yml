@@ -1,0 +1,6 @@
+name: SlashSuicide
+version: ${project.version}
+main: me.xyrophyte.slashsuicide.SlashSuicide
+api-version: 1.17
+authors: [ XyroPhyte ]
+description: A simple /kill and /suicide Spigot Plugin.
