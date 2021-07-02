@@ -20,11 +20,14 @@ public class Suicide implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             if (player.hasPermission("slashsuicide.suicide")) {
-                player.setHealth(0);
-                player.sendMessage("Goodbye cruel world.");
+                if(args.length == 0) {
+                    player.setHealth(0);
+                    player.sendMessage(ChatColor.GOLD + "Goodbye Cruel World.");
+                } else {
+                    return true;
+                }
             } else {
-                player.sendMessage(ChatColor.RED + "Failed to run command. You do not have enough permission." +
-                        "Please contact an administrator if you believe this is an error.");
+                player.sendMessage(ChatColor.RED + "Failed to run command. You do not have enough permission. Please contact an administrator if you believe this is an error.");
             }
         } else {
             instance.getLogger().info(ChatColor.GOLD + "Failed to run command. Command is player only.");

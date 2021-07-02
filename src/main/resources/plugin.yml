@@ -8,5 +8,3 @@ commands:
   suicide:
     description: Commit Suicide.
     usage: /suicide or /kill
-    aliases:
-      - kill
